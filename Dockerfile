@@ -5,7 +5,7 @@ VOLUME /config
 VOLUME /code
 
 ENV TERM=xterm
-CMD EXPORT PYMSSQL_BUILD_WITH_BUNDLED_FREETDS=1
+ENV PYMSSQL_BUILD_WITH_BUNDLED_FREETDS=1
 
 # Install from pip
 RUN pip3 install --no-cache-dir sanic pymssql
